@@ -18,6 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Matemasie&display=swap" rel="stylesheet">
     
     <style>
+        body{
+            background-image: url("https://www.google.co.uk/url?sa=i&url=https%3A%2F%2Fforum.affinity.serif.com%2Findex.php%3F%2Ftopic%2F159536-matrix-like-letter-rain%2F&psig=AOvVaw0IsXM-D-d3_1xngCFKEkIg&ust=1724327528566000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjmsMmDhogDFQAAAAAdAAAAABA0");
+        }
         .flex-container {
             display: flex;
             padding: 1rem;
@@ -33,25 +36,41 @@
         a {
             padding: 1rem;
             background-color: black;
+            border-radius: 150px;
             font-family: Alfa Slab One;
+        }
+        a:hover{
+        }
+        nav{
+            background-color: green;
+        }
+
+        .background{
+            background-image: url('matrix.gif');
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
         }
     </style>
 </head>
 
-<body>
-    <section>
-        <div class="flex-container" id="nav">
-            <div>
-                <a href="/Home.html">Home</a>
+<body class="background">
+    <nav>
+        <section>
+            <div class="flex-container" id="nav">
+                <div>
+                    <a href="/Home.html">Home</a>
+                </div>
+                <div>
+                    <a href="/2nd_page.html">2nd page</a>
+                </div>
             </div>
-            <div>
-                <a href="/2nd_page.html">2nd page</a>
+            <div id="logo">
+                <img src="/Images/images.png" alt="The RL Logo">
             </div>
-        </div>
-        <div id="logo">
-            <img src="/Images/images.png" alt="The RL Logo">
-        </div>
-    </section>
+        </section>
+    </nav>
+    
 
     <section>
         <div class="main_txt">
