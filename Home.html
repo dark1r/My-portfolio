@@ -18,124 +18,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Matemasie&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            background-color: #000000;
-            color: aliceblue;
-            /*background-image: url("https://www.google.co.uk/url?sa=i&url=https%3A%2F%2Fforum.affinity.serif.com%2Findex.php%3F%2Ftopic%2F159536-matrix-like-letter-rain%2F&psig=AOvVaw0IsXM-D-d3_1xngCFKEkIg&ust=1724327528566000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjmsMmDhogDFQAAAAAdAAAAABA0");*/
-        }
-        /*
-        p{
-            color: aliceblue;
-         }
-        .flex-container {
-            display: flex;
-            padding: 1rem;
-            justify-content: flex-end;
-        }
+    ul{
+        list-style-type: none;
+        float:right;
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        background-color: navy;
+    }
+    .navbar1{
+        display: inline-block;
+    }
+    .navbar1>a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .navbar1>a:hover{
+        background-color: goldenrod;
+    }
 
-        .main_txt {
-            padding: 1rem;
-            justify-content: flex-start;
-            font-family: Matemasie;
-        }
-
-        a {
-            padding: 1rem;
-            font-family: Alfa Slab One;
-            color: whitesmoke;
-        }
-
-        a:hover {
-            background-color: #7e5109;
-        }
-
-        header{
-            background-color: navy;
-        }
-
-        .background{
-            background-image: url('/Images/matrix.gif');
-            background-position: center;
-            background-size: cover;
-            overflow: hidden;
-        } */
+    #Myname{
+        text-align: center;
+        /* float: left; */
+        width: 250px;
+        border: black solid;
+        
+    }
     </style>
 </head>
 
 <body class="background">
-    <div style="text-align: right; padding: 2rem;">
-        <div class="container">
+        <div id="navbar">
             <Nav>
                 <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About Me.html">About Me</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="Contact Me.html">Contact Me</a></li>
+                    <li class="navbar1"><a href="Home.html">Home</a></li>
+                    <li class="navbar1"><a href="About Me.html">About Me</a></li>
+                    <li class="navbar1"><a href="Projects.html">Projects</a></li>
+                    <li class="navbar1"><a href="Contact Me.html">Contact Me</a></li>
                 </ul>
             </Nav>
         </div>
 
+    <div id="Myname">
+        <h1 >Robert Davis-Lewin</h1>
     </div>
-    <div style="padding: 100px;">
-        <h1 id="name" style="text-align: center; font-size: xxx-large;">Robert Davis-Lewin</h1>
+    
+    
+    
+    
+    <div>
         <p style="text-align: center;">software developer in training</p>
+        <header>
+            <h2>My Portfolio</h1>
+        </header>
+    
+        <p id="quote"><i>Without commitment you will never start...<br> an without commitment you will never finish</i></p>
+    
+        <section>
+            <div class="main_txt">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking
+                    at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                    letters,
+                    as opposed to using 'Content here, content here', making it look like readable English. Many desktop
+                    publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search
+                    for
+                    'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
+                    years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+            </div>
+    
+            <div>
+                <p>Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een
+                    pagina, afgeleid
+                    wordt door de tekstuele inhoud. Het belangrijke punt van het gebruik van Lorem Ipsum is dat het uit een
+                    min of meer
+                    normale verdeling van letters bestaat, in tegenstelling tot "Hier uw tekst, hier uw tekst" wat het tot
+                    min of meer
+                    leesbaar nederlands maakt. Veel desktop publishing pakketten en web pagina editors gebruiken
+                    tegenwoordig Lorem
+                    Ipsum als hun standaard model tekst, en een zoekopdracht naar "lorem ipsum" ontsluit veel websites die
+                    nog in
+                    aanbouw zijn. Verscheidene versies hebben zich ontwikkeld in de loop van de jaren, soms per ongeluk soms
+                    expres
+                    (ingevoegde humor en dergelijke).</p>
+            </div>
+        </section>
     </div>
-
-    <header>
-        <h2>My Portfolio</h1>
-        <nav>
-
-            <!-- <div class="flex-container" id="nav">
-                <div>
-                    <a href="/Home.html">Home</a>
-                </div>
-                <a>About Me</a>
-                <div>
-                    <a href="/2nd_page.html">Projects</a>
-                </div>
-                <div>
-                    <a href="/2nd_page.html"></a>
-                </div>
-                
-            </div> -->
-            <!-- <div id="logo">
-                <img src="/Images/images.png" alt="The RL Logo">
-            </div> -->
-        </nav>
-    </header>
-
-    <section>
-        <div class="main_txt">
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking
-                at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                letters,
-                as opposed to using 'Content here, content here', making it look like readable English. Many desktop
-                publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search
-                for
-                'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
-                years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p>
-        </div>
-
-
-
-        <div>
-            <p>Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een
-                pagina, afgeleid
-                wordt door de tekstuele inhoud. Het belangrijke punt van het gebruik van Lorem Ipsum is dat het uit een
-                min of meer
-                normale verdeling van letters bestaat, in tegenstelling tot "Hier uw tekst, hier uw tekst" wat het tot
-                min of meer
-                leesbaar nederlands maakt. Veel desktop publishing pakketten en web pagina editors gebruiken
-                tegenwoordig Lorem
-                Ipsum als hun standaard model tekst, en een zoekopdracht naar "lorem ipsum" ontsluit veel websites die
-                nog in
-                aanbouw zijn. Verscheidene versies hebben zich ontwikkeld in de loop van de jaren, soms per ongeluk soms
-                expres
-                (ingevoegde humor en dergelijke).</p>
-        </div>
-    </section>
     <footer>
         <a href="https://www.google.co.uk/"><img src="/Images/LI.png" style="height: 50px;"></a>
     </footer>
