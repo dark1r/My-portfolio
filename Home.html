@@ -62,8 +62,34 @@
 
         }
 
-        #container{
+        .grid-container {
             display: grid;
+
+        }
+
+        #colmn1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            gap: 50px;
+            background-color: yellow;
+        }
+
+        #colmn2 {
+            grid-column-start: 3;
+            grid-column-end: 7;
+            gap: 50px;
+            background-color: rgb(0, 26, 255);
+        }
+
+        #colmn3 {
+            grid-column-start: 7;
+            grid-column-end: 8;
+            gap: 50px;
+            background-color: rgb(0, 255, 42);
+        }
+        .background{
+            background: url(https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?cs=srgb&dl=codes-coding-computer-270366.jpg&fm=jpg);
+            opacity: calc(50);
         }
     </style>
 </head>
@@ -79,17 +105,39 @@
             </ul>
         </Nav>
     </div>
+
     <div class="grid-container">
-        <div id="colmn1"><p>hello</p></div>
-        <div id="colmn2"></div>
-        <div id="colmn3"></div>
+        <!-- <div id="colmn1">
+            <p>hello</p>
+        </div> -->
+        <div id="colmn2">
+            <div class="main">
+                <p>Main body</p>
+
+                <h2>Hi I'm</h2>
+                <h1>Robert Lewin</h1>
+                <h3> Trainee software developer</h3>
+            </div>
+            <div>
+                
+            </div>
+
+
+        </div>
+        <div id="colmn3">colmn3
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="Projects.html" class="btn btn-primary">Projects</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="main">
-        <p>Main body</p>
 
-
-    </div>
 
     <div class="Footer">
         <p>Footer</p>
@@ -97,11 +145,7 @@
 
 
 
-    <!-- <div id="Myname">
-        <h2>Hi I'm</h2>
-        <h1>Robert Lewin</h1>
-        <h3> Trainee software developer</h3>
-    </div> -->
+
 
 
 
