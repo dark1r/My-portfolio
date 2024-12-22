@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <title>website</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- This is the necessary Bootstrap information -->
@@ -21,84 +21,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Matemasie&display=swap" rel="stylesheet">
 
     <style>
-        .card{
+        .card {
             display: inline-flex;
         }
-        @media (max-width:640px){
+
+        @media (max-width:640px) {
             h1 {
                 color: red;
             }
-            h3{
+
+            h3 {
                 color: aqua;
             }
         }
-        @media (min-width:640px){
+
+        @media (min-width:640px) {
             h1 {
                 color: yellowgreen;
             }
-            h3{
+
+            h3 {
                 color: goldenrod;
             }
 
+        }
+
+        #Intro {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            padding: 250px;
+            background-color: darkgreen;
+            opacity: 50%;
+        }
+
+        #news {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            padding: 250px;
+            background-color: darkgreen;
+            opacity: 50%;
+        }
+
+        #card_news {
+            width: 200px;
         }
     </style>
 </head>
 
 <body class="background" style="margin: 0;">
-    <header>
-        <div >
+    <section>
+        <div>
             <ul class="nav nav-underline justify-content-center">
                 <li class="nav-item">
                     <a href="#" class="nav-link active " aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link disabled" aria-disabled="True">About Me</a>
+                    <a href="#" class="nav-link " aria-link="True">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link disabled" aria-disabled="True">Projects</a>
                 </li>
-    
             </ul>
         </div>
-        
+    </section>
 
-        
+    <section id="Intro">
+        <div class="col-6 col-sm-12">
 
-        <!-- <div id="navbar">
-            <Nav>
-                <ul>
-                    <li class="navbar1"><a href="Home.html">Home</a></li>
-                    <li class="navbar1"><a href="About Me.html">About Me</a></li>
-                    <li class="navbar1"><a href="Projects.html">Projects</a></li>
-                    <li class="navbar1"><a href="Contact Me.html">Contact Me</a></li>
-                </ul>
-            </Nav>
-        </div> -->
-    </header>
-    
-    <div class="col-6 col-sm-12">
+            <h1> Hi, My name is Robert</h1>
+            <p> I am current Learning how to create websites and web apps using html, CSS, Javascript, C# and other
+                programming lannguages
+                Trainee software Web & Software Developer
+            </p>
+        </div>
+    </section>
 
-        <h1> Hi, My name is Robert</h1>
-        <p> I am current Learning how to create websites and web apps using html, CSS, Javascript, C# and other programming lannguages
-            Trainee software Web & Software Developer
-        </p>
-    </div>
-    
+
 
     <!-- <section style="margin-left: 400px; margin-right: 400px;">
         <div style="margin: 100px; border: solid; border-radius: 30px ; text-align: center;">
             
         </div>
     </section> -->
-    
+
     <section>
         <div>
             <h3>Projects</h3>
-            <p>here are my most recent projects that I am currently working or  have decided to work on</p>
+            <p>here are my most recent projects that I am currently working or have decided to work on</p>
             <div class="flex-container">
                 <a href="">
                     <div class="projectBox_top">
-                     <p>Click Me</p>   
+                        <p>Click Me</p>
                     </div>
                 </a>
                 <div class="flex-container">
@@ -127,23 +140,31 @@
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            <div>
-                <h3>Recent News</h3>
-                <p>This will be a card that displays a little information</p>
             </div>
         </div>
-
     </section>
 
-    <footer>
+    <section id="news">
+        <div>
+            <h3>Recent News</h3>
+            <p>This will be a card that displays a little information</p>
+            <div class="card_news card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">here is some place holder text for the card tyhat I have created</p>
+                    <a href="#" class="btn btn-danger">Open to see more</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="Footer"> 
+
+    <footer>
+        <div class="Footer">
             <ul>
                 <li><a href="" alt="LinkedIn Icon">LinkedIn</a></li>
                 <li><a href="" alt="Github">Github</a></li>
-            </ul> 
+            </ul>
         </div>
     </footer>
     <!-- <div class="grid-container">
@@ -231,3 +252,15 @@
 <!-- https://sebkay.com/ -->
 
 <!-- https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/ -->
+
+<!-- <div id="navbar">
+            <Nav>
+                <ul>
+                    <li class="navbar1"><a href="Home.html">Home</a></li>
+                    <li class="navbar1"><a href="About Me.html">About Me</a></li>
+                    <li class="navbar1"><a href="Projects.html">Projects</a></li>
+                    <li class="navbar1"><a href="Contact Me.html">Contact Me</a></li>
+                </ul>
+            </Nav>
+        </div> -->
+        
