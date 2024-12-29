@@ -50,25 +50,50 @@
             margin-top: 20px;
             margin-bottom: 5px;
             padding: 250px;
-            background-color: darkgreen;
+            background-color: wheat;
             opacity: 50%;
         }
 
         #news {
-            margin-top: 20px;
-            margin-bottom: 5px;
+            /* margin-top: 20px;
+            margin-bottom: 5px; */
             padding: 250px;
-            background-color: darkgreen;
+            padding-left: 0px;
+            padding-top: 0px;
+            background-color: wheat;
             opacity: 50%;
         }
 
         #card_news {
             width: 200px;
         }
-        .Footer{
+
+        .Footer {
             display: flex;
             justify-content: center;
             gap: 50px;
+        }
+
+        .slideshow-container {
+            max-width: max-content;
+            position: relative;
+            margin: auto;
+        }
+
+        .Myslide {
+            margin: auto;
+        }
+
+        .Textbox {
+            padding-left: 100px;
+            padding-right: 100px;
+            margin: 10px 100px;            
+            border-radius: 40px;
+            border: solid wheat;
+        }
+        .Page-structure{
+            padding-left: 100px;
+            padding-right: 100px;
         }
     </style>
 </head>
@@ -94,14 +119,55 @@
         <div class="col-6 col-sm-12">
 
             <h1> Hi, My name is Robert</h1>
-            <p id = text_centre> I am current Learning how to create websites and web apps using html, CSS, Javascript, C# and other
+            <p id=text_centre> I am current Learning how to create websites and web apps using html, CSS, Javascript, C#
+                and other
                 programming lannguages
                 Trainee software Web & Software Developer
             </p>
         </div>
     </section>
 
+    <section>
+        <h3>
+            About Me
+        </h3>
+        <div class="about_me">
+            <div class="slideshow-container">
+            
+                <div class="Myslide Textbox">
+                    <p>
+                        My name is Robert and I am currently working as software solutions technician. I enjoy working
+                        with computer hardware such as taking a part and
+                        putting together computers and setting up servers. I also like working with software, virtual
+                        machines and researching about cyber security events
+                    </p>
 
+                </div>
+                <div class="Textbox">
+                    <H5>Hobbies:</H5>
+
+                    I enjoy: <br>
+                    <ul>
+                        <li>playing computer games</li>
+                        <li>Working out</li>
+                        <li>playing Football</li>
+                        <li>Going for walks</li>
+                        <li>Learning something new</li>
+                    </ul>
+                </div>
+                <div class="Textbox">
+                    <p>Skills:</p>
+                    <ul>
+                        <li>Good time managment skills</li>
+                        <li>Good communications</li>
+                        <li>Able to work independantly and as a team player</li>
+                        <li>Able to work</li>
+                        <li>Able to adapt to different situation and environment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- <section style="margin-left: 400px; margin-right: 400px;">
         <div style="margin: 100px; border: solid; border-radius: 30px ; text-align: center;">
@@ -112,68 +178,77 @@
     <section>
         <div>
             <h3>Projects</h3>
-            <p>here are my most recent projects that I am currently working or have decided to work on</p>
-            <div class="flex-container">
-                <a href="">
-                    <div class="projectBox_top">
-                        <p>Click Me</p>
-                    </div>
-                </a>
+
+            <div class="Page-structure">
+                <p>here are my most recent projects that I am currently working or have decided to work on</p>
+
                 <div class="flex-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is some example </p>
-                            <a href="#" class="btn btn-primary">See More</a>
+                    <a href="">
+                        <div class="projectBox_top">
+                            <p>Click Me</p>
                         </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is some example </p>
-                            <a href="#" class="btn btn-primary">See More</a>
+                    </a>
+                    <div class="flex-container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is some example </p>
+                                <a href="#" class="btn btn-primary">See More</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is some example </p>
-                            <a href="#" class="btn btn-primary">See More</a>
+                        <div class="card" style="width: 18rem;">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is some example </p>
+                                <a href="#" class="btn btn-primary">See More</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is some example </p>
+                                <a href="#" class="btn btn-primary">See More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+           
         </div>
     </section>
 
-    <section id="news">
-        <div>
+    <section>
+        <div id="news">
             <h3>Recent News</h3>
             <p>This will be a card that displays a little information</p>
+            <p class="Textbox">
+                The Portfolio page is currently going through alpha testing and more updates will be provided after testing has been completed
+            </p>
+<!--             
             <div class="card_news card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Card Title</h5>
                     <p class="card-text">here is some place holder text for the card tyhat I have created</p>
                     <a href="#" class="btn btn-danger">Open to see more</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
 
-    <section>
+    <!-- <section>
         <div>
             <h3>Links</h3>
             <ul class="Footer">
-                
+                <i class="fa-brands fa-linkedin"></i>
                 <li><a href="#" alt="LinkedIn Icon">LinkedIn</a></li>
                 <li><a href="#" alt="Github">Github</a></li>
             </ul>
         </div>
-    </section>
+    </section> -->
     <!-- <div class="grid-container">
         <div id="colmn1">
             <p>hello</p>
@@ -270,4 +345,3 @@
                 </ul>
             </Nav>
         </div> -->
-        
