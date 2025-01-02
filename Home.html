@@ -117,17 +117,25 @@
             display: flex;
             justify-content: right;
             list-style-type: none;
-            top: 0;
-            position: fixed;
+            /* top: 0;
+            position: fixed; */
         }
         .Navbaritem{
-            padding-inline: 20px;
+            padding: 30px;
+        }
+        :hover.Navbaritem{
+            background-color: wheat;
+        }
+        #Navbar2{
+            position: static;
+            top: 0;
+            right: 0;
         }
     </style>
 </head>
 
 <body class="background" style="margin: 0;">
-    <section>
+    <section id="Navbar2">
         <div>
             <ul class="Navbar">
                 <li class="Navbaritem">
