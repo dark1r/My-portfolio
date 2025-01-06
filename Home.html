@@ -59,8 +59,7 @@
                 color: goldenrod;
             }
             #Intro {
-            margin-top: 20px;
-            margin-bottom: 5px;
+            margin: 0 50px 5px 50px;
             padding: 250px;
             background-color: wheat;
             opacity: 50%;
@@ -104,11 +103,7 @@
             margin: auto;
         }
 
-        .Myslide {
-            margin: auto;
-        }
-
-        .Page-structure{
+       .Page-structure{
             padding-left: 100px;
             padding-right: 100px;
         }
@@ -125,11 +120,33 @@
         }
         :hover.Navbaritem{
             background-color: wheat;
+            opacity: 50%;
+        }
+        .headers{
+            padding-left: 50px;
+        }
+        #text_centre{
+            padding: 0px 100px;
         }
         #Navbar2{
             position: static;
             top: 0;
             right: 0;
+        }
+        .first_box{
+            margin: 0% 50% 0% 2%;
+            padding: 0px 50px;
+        }
+        .Snd_box{
+            margin: 0% 2% 0% 50%;
+            padding: 0px 50px;
+        }
+        .section_border{
+            margin: 0 50px 5px 50px;
+        }
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -137,7 +154,7 @@
 <body class="background" style="margin: 0;">
     <section id="Navbar2">
         <div>
-            <ul class="Navbar">
+            <ul class="Navbar" style="margin: 0; padding-right: 50px;">
                 <li class="Navbaritem">
                     <a href="#Intro" class="nav-link " aria-current="page">Home</a>
                 </li>
@@ -152,33 +169,42 @@
     </section>
 
     <section id="Intro">
-        <div>
-
+        <div id=text_centre>
             <h1> Hi, My name is Robert</h1>
-            <p id=text_centre> 
+            <p> 
                 I am currently Learning how to create websites and web apps using html, CSS, Javascript, C# and other programming lannguages
                 Trainee software Web & Software Developer
             </p>
         </div>
     </section>
 
-    <section id="about_me" class="about_me section_spc">
-        <h3>
+    <section id="about_me" class="about_me section_spc section_border">
+        <h3 class="headers">
             About Me
         </h3>
         <div>
-            <div class="slideshow-container">
-            
-                <div class="Myslide Textbox">
+            <div class="flex-container">
+                <div class="first_box">
                     <p>
                         My name is Robert and I am currently working as software solutions technician. I enjoy working
                         with computer hardware such as taking a part and
                         putting together computers and setting up servers. I also like working with software, virtual
                         machines and researching about cyber security events
                     </p>
-
+                    <p>
+                        My name is Robert and I am currently working as software solutions technician. I enjoy working
+                        with computer hardware such as taking a part and
+                        putting together computers and setting up servers. I also like working with software, virtual
+                        machines and researching about cyber security events
+                    </p>
+                    <p>
+                        My name is Robert and I am currently working as software solutions technician. I enjoy working
+                        with computer hardware such as taking a part and
+                        putting together computers and setting up servers. I also like working with software, virtual
+                        machines and researching about cyber security events
+                    </p>
                 </div>
-                <div class="Textbox">
+                <div class="Snd_box">
                     <H5>Hobbies:</H5>
 
                     I enjoy: <br>
@@ -206,7 +232,7 @@
 
     <section id="projects" class="section_spc">
         <div>
-            <h3>Projects</h3>
+            <h3 class="headers">Projects</h3>
 
             <div class="Page-structure">
                 <div class="Textbox">
@@ -221,7 +247,7 @@
     </section>
     <section>
         <div>
-            <h3>Links</h3>
+            <h3 class="headers">Links</h3>
             <ul class="Footer">
                 <i class="fa-brands fa-linkedin"></i>
                 <li><a href="#" alt="LinkedIn Icon">LinkedIn</a></li>
@@ -289,3 +315,4 @@
             </p>
         </div>
     </section> -->
+    <!-- https://www.flux-academy.com/blog/web-design-portfolio-examples -->
