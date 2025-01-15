@@ -34,8 +34,7 @@
                 color: aqua;
             }
             #Intro {
-            margin-top: 20px;
-            margin-bottom: 5px;
+                margin: 0 20px 5px 20px;
             padding: 100px;
             background-color: wheat;
             opacity: 50%;
@@ -47,9 +46,16 @@
             border-radius: 40px;
             border: solid wheat;
             }
+            #text_centre {
+                padding: 0px;
+            }
+            .headers{
+            padding-left: px;
+            }
 
         }
 
+        /*This is the main page view responsiveness so on non mobile devices it will look like the normal webpage*/
         @media (min-width:640px) {
             h1 {
                 color: yellowgreen;
@@ -71,36 +77,38 @@
             border-radius: 40px;
             border: solid wheat;
             }
+            #text_centre {
+                padding: 0px 100px;
+            }
+            
+            .first_box{
+            /* margin: 0% 50% 0% 2%; */
+            width: 50%;
+            padding: 0px 50px;
+            }
+            .headers{
+            padding-left: 50px;
+            }
         }
-
+        
         .section_spc{
                 margin-top:20px;
             }
 
-        #news {
-            /* margin-top: 20px;
-            margin-bottom: 5px; */
+        /* #news {
+            margin-top: 20px;
+            margin-bottom: 5px;
             padding: 250px;
             padding-left: 0px;
             padding-top: 0px;
             background-color: wheat;
             opacity: 50%;
-        }
-
-        #card_news {
-            width: 200px;
-        }
+        } */
 
         .Footer {
             display: flex;
             justify-content: center;
             gap: 50px;
-        }
-
-        .slideshow-container {
-            max-width: max-content;
-            position: relative;
-            margin: auto;
         }
 
        .Page-structure{
@@ -122,22 +130,14 @@
             background-color: wheat;
             opacity: 50%;
         }
-        .headers{
-            padding-left: 50px;
-        }
-        #text_centre{
-            padding: 0px 100px;
-        }
+       
+        
         #Navbar2{
             position: static;
             top: 0;
             right: 0;
         }
-        .first_box{
-            /* margin: 0% 50% 0% 2%; */
-            width: 50%;
-            padding: 0px 50px;
-        }
+       
         .Snd_box{
             margin: 0% 10% 0% 0%;
             /* padding: 0px 50px; */
@@ -154,13 +154,13 @@
     </style>
 </head>
 
-<body class="background" style="margin: 0;">
+<body style="margin: 0;">
     <section id="Navbar2">
         <div>
             <ul class="Navbar" style="margin: 0; padding-right: 50px;">
-                <li class="Navbaritem">
+                <!-- <li class="Navbaritem">
                     <a href="#Intro" class="nav-link " aria-current="page">Home</a>
-                </li>
+                </li> -->
                 <li class="Navbaritem">
                     <a href="#about_me" class="nav-link " aria-link="True">About Me</a>
                 </li>
@@ -181,7 +181,7 @@
         </div>
     </section>
 
-    <section id="about_me" class="about_me section_spc section_border">
+    <section class="about_me section_spc section_border">
         <h3 class="headers">
             About Me
         </h3>
@@ -251,7 +251,7 @@
 
     <section>
         <div class="section_border">
-            <h3 class="headers">Links</h3>
+            <!-- <h3 class="headers">Links</h3> -->
             <div class="Footer">
     
                 <a href="https://www.linkedin.com/login" alt="LinkedIn Icon">
