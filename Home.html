@@ -34,7 +34,7 @@
                 color: aqua;
             }
             #Intro {
-                margin: 0 20px 5px 20px;
+            margin: 0 20px 5px 20px;
             padding: 100px 10px;
             background-color: wheat;
             opacity: 50%;
@@ -71,9 +71,9 @@
             }
             #Intro {
             margin: 0 50px 5px 50px;
-            padding: 250px 250px 500px 250px;
+            padding: 325px 250px 325px 250px;
             background-color: wheat;
-            opacity: 50%;
+            /* opacity: 50%; */
             }
             .Textbox {
             padding-left: 100px;
@@ -130,10 +130,11 @@
         }
         .Navbaritem{
             padding: 30px;
+            color: antiquewhite;
         }
         :hover.Navbaritem{
             background-color: wheat;
-            opacity: 50%;
+            /* opacity: 50%; */
         }
        
         
@@ -156,18 +157,149 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
+        body{
+            background-color: black;
+        }
+        .grid-container{
+            width: 100%;
+            display:grid;
+            gap: 5px 20px;
+            grid-template-columns: auto;
+            grid-template-rows: 300px 300px 300px;
+        }
+        .item1{
+            background-color: aliceblue;
+            grid-row:  span 3;
+            border-radius: 50px;
+        }
+        
+        .item2{
+            background-color: goldenrod;
+            grid-column:2 / span 2;
+            grid-row:1;
+            border-radius: 50px
+        }
+        .item3{
+            background-color: goldenrod;
+            grid-column:2 / span 2;
+            grid-row:2;
+            border-radius: 50px
+        }
+        .item4{
+            background-color: goldenrod;
+            grid-column:2 / span 2;
+            grid-row:3;
+            border-radius: 50px
+        }
+
+        .item5{
+            background-color: aliceblue;
+            grid-row: 1 /span 3 ;
+            grid-column:4;
+            border-radius: 50px;
+        }
     </style>
 </head>
 
 <body style="margin: 0;">
+
+    <div class="grid-container">
+        <div class="item item1">
+            <section class="about_me section_spc section_border">
+                <h3 class="headers">
+                    About Me
+                </h3>
+                <div>
+                    <div>
+                        <div>
+                            <p>
+                                My name is Robert and I am currently working as software solutions technician. I enjoy working
+                                with computer hardware such as taking a part and
+                                putting together computers and setting up servers. I also like working with software, virtual
+                                machines and researching about cyber security events
+                            </p>
+                            <p>
+                                I am currently Learning how to create websites and web apps using html, CSS, Javascript, C# and
+                                other programming lannguages
+                                Trainee software Web & Software Developer
+                            </p>
+                            <!-- <p>
+                                My name is Robert and I am currently working as software solutions technician. I enjoy working
+                                with computer hardware such as taking a part and
+                                putting together computers and setting up servers. I also like working with software, virtual
+                                machines and researching about cyber security events
+                            </p>
+                            <p>
+                                My name is Robert and I am currently working as software solutions technician. I enjoy working
+                                with computer hardware such as taking a part and
+                                putting together computers and setting up servers. I also like working with software, virtual
+                                machines and researching about cyber security events
+                            </p> -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="item item2">
+            <section>
+                <div id=text_centre>
+                    <h1> Hi, My name is Robert</h1>
+                </div>
+            </section>
+        </div>
+
+        <div class="item item3">
+            <div class="Snd_box">
+                <H5>Hobbies:</H5>
+
+                I enjoy: <br>
+                <ul>
+                    <li>playing computer games</li>
+                    <li>Working out</li>
+                    <li>playing Football</li>
+                    <li>Going for walks</li>
+                    <li>Learning something new</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item item4"><div>
+            <p>Skills:</p>
+            <ul>
+                <li>Good time managment skills</li>
+                <li>Good communications</li>
+                <li>Able to work independantly and as a team player</li>
+                <li>Able to work</li>
+                <li>Able to adapt to different situation and environment</li>
+            </ul>
+        </div></div>
+        <div class="item item5">
+            <section>
+                <div>
+                    <h3 class="headers">Projects</h3>
+                    <div>
+                        <div>
+                            <p>
+                                Please note that I currently do not have any projects to show in this section as I am starting
+                                to work in software development. However I will be
+                                updating this page constantly after each project has been completed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--
     <section id="Navbar2">
         <div>
             <ul class="Navbar" style="margin: 0; padding-right: 50px;">
-                <!-- <li class="Navbaritem">
-                    <a href="#Intro" class="nav-link " aria-current="page">Home</a>
-                </li> -->
                 <li class="Navbaritem">
-                    <a href="#about_me" class="nav-link " aria-link="True">About Me</a>
+                    <a href="#Intro" class="nav-link " aria-current="page">Home</a>
+                </li>
+                <li class="Navbaritem">
+                    <a href="About Me.html" class="nav-link " aria-link="True">About Me</a>
                 </li>
                 <li class="Navbaritem">
                     <a href="#projects" class="nav-link " aria-disabled="True">Projects</a>
@@ -176,87 +308,11 @@
         </div>
     </section>
 
-    <section id="Intro">
-        <div id=text_centre>
-            <h1> Hi, My name is Robert</h1>
-            <p> 
-                I am currently Learning how to create websites and web apps using html, CSS, Javascript, C# and other programming lannguages
-                Trainee software Web & Software Developer
-            </p>
-        </div>
-    </section>
-
-    <section class="about_me section_spc section_border">
-        <h3 class="headers">
-            About Me
-        </h3>
-        <div>
-            <div class="flex-container">
-                <div class="first_box">
-                    <p>
-                        My name is Robert and I am currently working as software solutions technician. I enjoy working
-                        with computer hardware such as taking a part and
-                        putting together computers and setting up servers. I also like working with software, virtual
-                        machines and researching about cyber security events
-                    </p>
-                    <p>
-                        My name is Robert and I am currently working as software solutions technician. I enjoy working
-                        with computer hardware such as taking a part and
-                        putting together computers and setting up servers. I also like working with software, virtual
-                        machines and researching about cyber security events
-                    </p>
-                    <p>
-                        My name is Robert and I am currently working as software solutions technician. I enjoy working
-                        with computer hardware such as taking a part and
-                        putting together computers and setting up servers. I also like working with software, virtual
-                        machines and researching about cyber security events
-                    </p>
-                </div>
-                <div class="Snd_box">
-                    <H5>Hobbies:</H5>
-
-                    I enjoy: <br>
-                    <ul>
-                        <li>playing computer games</li>
-                        <li>Working out</li>
-                        <li>playing Football</li>
-                        <li>Going for walks</li>
-                        <li>Learning something new</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Skills:</p>
-                    <ul>
-                        <li>Good time managment skills</li>
-                        <li>Good communications</li>
-                        <li>Able to work independantly and as a team player</li>
-                        <li>Able to work</li>
-                        <li>Able to adapt to different situation and environment</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section_spc section_border">
-        <div>
-            <h3 class="headers">Projects</h3>
-
-            <div class="Page-structure">
-                <div class="Textbox">
-                   <p>
-                    Please note that I currently do not have any projects to show in this section as I am starting to work in software development. However I will be
-                    updating this page constantly after each project has been completed.
-                   </p>
-                </div>
-            </div>
-           
-        </div>
-    </section>
+    
 
     <section>
         <div class="section_border">
-            <!-- <h3 class="headers">Links</h3> -->
+             <h3 class="headers">Links</h3> 
             <div class="Footer">
     
                 <a href="https://www.linkedin.com/login" alt="LinkedIn Icon">
@@ -273,8 +329,7 @@
                     </svg></a>
             </div>
         </div>
-    </section>
-        
+    </section>-->
 </body>
 
 </html>
@@ -335,3 +390,22 @@
         </div>
     </section> -->
     <!-- https://www.flux-academy.com/blog/web-design-portfolio-examples -->
+
+    <!--Who am I?
+        what is this website for?
+        why am I creating this website?
+        what are my goals? -->
+    
+    <!-- My Name is Robert Lewin I am a software solution technician. "which is a fancy way of saying your friendly neighbourhood Tech guy"-->
+    <!-- I have created this website as proof as a record of all the projects that I have commited to and to show off these projects to anyone that wishes to follow my journey.
+      I hope this portfolio provides people with the new ideas and serves as inspiration anyone trying to excell in the world IT and software development-->
+    <!-- In terms of goals Im still unaware on what I want to directly achieve on this journey. I want to be able learn everything anything the world IT, this could vary from learning about the fundamentals of 
+     AI and machine learning to creating my OS to learning about the priniciples of rfid and creating my own personal system. I realise this goal similar to trying 
+     to capture lightning in a bottle, as the thought of learning everything in a field that is exponentially growing by the minute is a difficult task in itself. -->
+     
+<!-- https://dribbble.com/shots/22668977-Simple-Portfolio -->
+<!-- website portfolio basic designs ^^ -->
+
+<!-- The design of the web portfolio?-->
+ <!-- I wish for the portfolio to be on 1 page as I do not have enough content about myself or work to be able to have multiple webpages 
+  I think I will need to learn the grid system as it will be very help in the final look of the page-->
