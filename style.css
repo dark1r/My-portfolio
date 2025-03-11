@@ -1,11 +1,38 @@
-.section
+.layout
 {
     width: 100vw;
     height: 100vh;
     background-color: gray;
-    padding: 50px;
+    padding: 50px 50vh;
 }
 .snd{
     background-color: aqua;
     height: 50vh;
+}
+.thr{
+    background-color: orange;
+    height: 50vh;
+}
+.fth{
+    background-color: yellow;
+    height: 50vh;
+} 
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+}
+.flexbox{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    /* flex-direction: row; */
+}
+.items{
+    /* padding: auto; */
+    height: 50px;
+    width: 100px;
+    background-color: goldenrod;
 }
