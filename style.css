@@ -39,3 +39,8 @@
 .items>a{
     text-decoration: none;
 }
+
+.format{
+    padding: 150px;
+    font-size: large;
+}
