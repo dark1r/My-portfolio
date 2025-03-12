@@ -1,46 +1,50 @@
-.layout
-{
+.layout {
     width: 100vw;
     height: 100vh;
-    background-color: gray;
+    /* background-color: gray; */
     padding: 50px 50vh;
 }
-.snd{
+
+.snd {
     background-color: aqua;
     height: 50vh;
 }
-.thr{
+
+.thr {
     background-color: orange;
     height: 50vh;
 }
-.fth{
-    background-color: yellow;
-    height: 50vh;
-} 
-
-.container{
+.container {
     display: grid;
     grid-template-columns: auto auto;
     padding: 0;
 }
-.flexbox{
+
+.flexbox {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     list-style: none;
     /* flex-direction: row; */
 }
-.items{
+
+.items {
     /* padding: auto; */
     height: 50px;
     width: 100px;
     background-color: goldenrod;
 }
-.items>a{
+
+.items>a {
     text-decoration: none;
 }
 
-.format{
-    padding: 150px;
-    font-size: large;
+.format {
+    padding: 0px 150px;
+    font-size: 20px;
+}
+
+.title {
+    padding: 30px 150px;
+    font-size: 30px;
 }
