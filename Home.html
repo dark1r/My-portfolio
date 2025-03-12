@@ -33,75 +33,44 @@
             h3 {
                 color: aqua;
             }
+
             #Intro {
-            margin: 0 20px 5px 20px;
-            padding: 100px 10px;
-            background-color: wheat;
-            opacity: 50%;
+                margin: 0 20px 5px 20px;
+                padding: 100px 10px;
+                background-color: wheat;
+                opacity: 50%;
             }
+
             .Textbox {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 10px;
-            margin: 10px;            
-            border-radius: 40px;
-            border: solid wheat;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                margin: 10px;
+                border-radius: 40px;
+                border: solid wheat;
             }
+
             #text_centre {
                 padding: 0px;
             }
-            .headers{
-            padding-left: px;
+
+            .headers {
+                padding-left: px;
             }
-            .Page-structure{
-            padding-left: 0px;
-            padding-right: 0px;
+
+            .Page-structure {
+                padding-left: 0px;
+                padding-right: 0px;
             }
 
         }
-        
+
         /*This is the main page view responsiveness so on non mobile devices it will look like the normal webpage*/
-        @media (min-width:811px) {
-            h1 {
-                color: yellowgreen;
-            }
+        /* @media (min-width:811px) {} */
 
-            h3 {
-                color: goldenrod;
-            }
-            #Intro {
-            margin: 0 50px 5px 50px;
-            padding: 325px 250px 325px 250px;
-            background-color: wheat;
-            /* opacity: 50%; */
-            }
-            .Textbox {
-            padding-left: 100px;
-            padding-right: 100px;
-            margin: 10px 100px;            
-            border-radius: 40px;
-            border: solid wheat;
-            }
-            #text_centre {
-                padding: 0px 100px;
-            }
-            .first_box{
-            /* margin: 0% 50% 0% 2%; */
-            width: 50%;
-            padding: 0px 50px;
-            }
-            .headers{
-            padding-left: 50px;
-            }
-            .Page-structure{
-            padding-left: 100px;
-            padding-right: 100px;
-            }
+        .section_spc {
+            margin-top: 20px;
         }
-        
-        .section_spc{
-                margin-top:20px;
-            }
 
         /* #news {
             margin-top: 20px;
@@ -119,93 +88,147 @@
             gap: 50px;
         }
 
-       
-
-        .Navbar{
+        .Navbar {
             display: flex;
             justify-content: right;
             list-style-type: none;
             /* top: 0;
             position: fixed; */
         }
-        .Navbaritem{
+
+        .Navbaritem {
             padding: 30px;
             color: antiquewhite;
         }
-        :hover.Navbaritem{
+
+        :hover.Navbaritem {
             background-color: wheat;
             /* opacity: 50%; */
         }
-       
-        
-        #Navbar2{
+
+
+        #Navbar2 {
             position: static;
             top: 0;
             right: 0;
         }
-       
-        .Snd_box{
-            margin: 0% 10% 0% 0%;
+
+        .Snd_box {
+            margin: 10% 10% 0% 10%;
             /* padding: 0px 50px; */
         }
 
-        .section_border{
+        .section_border {
             margin: 0 50px 5px 50px;
         }
-        .flex-container{
+
+        .flex-container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
         }
-        body{
+
+        /* body {
             background-color: black;
-        }
-        .grid-container{
+        } */
+
+        .grid-container {
             width: 100%;
-            display:grid;
+            display: grid;
             gap: 5px 20px;
             grid-template-columns: auto;
-            grid-template-rows: 300px 300px 300px;
+            grid-template-rows: 320px 320px 320px ;
         }
-        .item1{
+
+        .item {
+            border: solid black;
+        }
+
+        .item1 {
             background-color: aliceblue;
-            grid-row:  span 3;
+            grid-row: span 3;
             border-radius: 50px;
         }
-        
-        .item2{
+
+        .item2 {
             background-color: goldenrod;
-            grid-column:2 / span 2;
-            grid-row:1;
-            border-radius: 50px
-        }
-        .item3{
-            background-color: goldenrod;
-            grid-column:2 / span 2;
-            grid-row:2;
-            border-radius: 50px
-        }
-        .item4{
-            background-color: goldenrod;
-            grid-column:2 / span 2;
-            grid-row:3;
+            grid-column: 2 / span 2;
+            grid-row: 1;
             border-radius: 50px
         }
 
-        .item5{
+        .item3 {
+            background-color: goldenrod;
+            grid-column: 2 / span 2;
+            grid-row: 2;
+            border-radius: 50px
+        }
+
+        .item4 {
+            background-color: goldenrod;
+            grid-column: 2 / span 2;
+            grid-row: 3;
+            border-radius: 50px
+        }
+
+        .item5 {
             background-color: aliceblue;
-            grid-row: 1 /span 3 ;
-            grid-column:4;
+            grid-row: 1 /span 3;
+            grid-column: 4;
             border-radius: 50px;
+        }
+
+
+        h1 {
+            color: black;
+            /* padding: 100px 0 0 0; */
+            margin: 50% 0 0 0;
+        }
+
+        h3 {
+            color: goldenrod;
+        }
+
+        #Intro {
+            margin: 0 50px 5px 50px;
+            padding: 325px 250px 325px 250px;
+            background-color: wheat;
+            /* opacity: 50%; */
+        }
+
+        .Textbox {
+            padding-left: 100px;
+            padding-right: 100px;
+            margin: 10px 100px;
+            border-radius: 40px;
+            border: solid wheat;
+        }
+
+        #text_centre {
+            padding: 0px 100px;
+        }
+
+        .first_box {
+            /* margin: 0% 50% 0% 2%; */
+            width: 50%;
+            padding: 0px 50px;
+        }
+
+        .headers {
+            padding-left: 50px;
+        }
+
+        .Page-structure {
+            padding-left: 100px;
+            padding-right: 100px;
         }
     </style>
 </head>
 
-<body style="margin: 0;">
-
+<body>
     <div class="grid-container">
         <div class="item item1">
-            <section class="about_me section_spc section_border">
+            <section class="section_spc section_border">
                 <h3 class="headers">
                     About Me
                 </h3>
@@ -213,42 +236,31 @@
                     <div>
                         <div>
                             <p>
-                                My name is Robert and I am currently working as software solutions technician. I enjoy working
+                                My name is Robert and I am currently working as software solutions technician. I enjoy
+                                working
                                 with computer hardware such as taking a part and
-                                putting together computers and setting up servers. I also like working with software, virtual
+                                putting together computers and setting up servers. I also like working with software,
+                                virtual
                                 machines and researching about cyber security events
                             </p>
                             <p>
-                                I am currently Learning how to create websites and web apps using html, CSS, Javascript, C# and
+                                I am currently Learning how to create websites and web apps using html, CSS, Javascript,
+                                C# and
                                 other programming lannguages
                                 Trainee software Web & Software Developer
                             </p>
-                            <!-- <p>
-                                My name is Robert and I am currently working as software solutions technician. I enjoy working
-                                with computer hardware such as taking a part and
-                                putting together computers and setting up servers. I also like working with software, virtual
-                                machines and researching about cyber security events
-                            </p>
-                            <p>
-                                My name is Robert and I am currently working as software solutions technician. I enjoy working
-                                with computer hardware such as taking a part and
-                                putting together computers and setting up servers. I also like working with software, virtual
-                                machines and researching about cyber security events
-                            </p> -->
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
         </div>
 
-        <div class="item item2">
-            <section>
-                <div id=text_centre>
-                    <h1> Hi, My name is Robert</h1>
-                </div>
-            </section>
-        </div>
+        <section class="item item2">
+            <div id=text_centre>
+                <h1> Robert lewin</h1>
+            </div>
+        </section>
 
         <div class="item item3">
             <div class="Snd_box">
@@ -264,16 +276,18 @@
                 </ul>
             </div>
         </div>
-        <div class="item item4"><div>
-            <p>Skills:</p>
-            <ul>
-                <li>Good time managment skills</li>
-                <li>Good communications</li>
-                <li>Able to work independantly and as a team player</li>
-                <li>Able to work</li>
-                <li>Able to adapt to different situation and environment</li>
-            </ul>
-        </div></div>
+        <div class="item item4">
+            <div class="Snd_box">
+                <p>Skills:</p>
+                <ul>
+                    <li>Good time managment skills</li>
+                    <li>Good communications</li>
+                    <li>Able to work independantly and as a team player</li>
+                    <li>Able to work</li>
+                    <li>Able to adapt to different situation and environment</li>
+                </ul>
+            </div>
+        </div>
         <div class="item item5">
             <section>
                 <div>
@@ -281,11 +295,15 @@
                     <div>
                         <div>
                             <p>
-                                Please note that I currently do not have any projects to show in this section as I am starting
+                                Please note that I currently do not have any projects to show in this section as I am
+                                starting
                                 to work in software development. However I will be
                                 updating this page constantly after each project has been completed.
                             </p>
                         </div>
+                        <embed src="https://www.manutd.com/" type="">
+                        <iframe src="https://trello.com/b/c47HVVdW" frameborder="0"></iframe>
+                        <iframe src="https://www.manutd.com/" frameborder="0"></iframe>
                     </div>
                 </div>
             </section>
@@ -344,9 +362,9 @@
             <h2>My Portfolio</h1>
         </header> -->
 
-        <!-- <p id="quote"><i>Without commitment you will never start...<br> an without commitment you will never finish</i></p> -->
+<!-- <p id="quote"><i>Without commitment you will never start...<br> an without commitment you will never finish</i></p> -->
 
-        <!-- <section>
+<!-- <section>
             <div class="main_txt">
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when
                     looking
@@ -378,7 +396,7 @@
         </section>
     </div>-->
 
-    
+
 <!-- 
     <section class="section_spc">
         <div id="news">
@@ -389,23 +407,23 @@
             </p>
         </div>
     </section> -->
-    <!-- https://www.flux-academy.com/blog/web-design-portfolio-examples -->
+<!-- https://www.flux-academy.com/blog/web-design-portfolio-examples -->
 
-    <!--Who am I?
+<!--Who am I?
         what is this website for?
         why am I creating this website?
         what are my goals? -->
-    
-    <!-- My Name is Robert Lewin I am a software solution technician. "which is a fancy way of saying your friendly neighbourhood Tech guy"-->
-    <!-- I have created this website as proof as a record of all the projects that I have commited to and to show off these projects to anyone that wishes to follow my journey.
+
+<!-- My Name is Robert Lewin I am a software solution technician. "which is a fancy way of saying your friendly neighbourhood Tech guy"-->
+<!-- I have created this website as proof as a record of all the projects that I have commited to and to show off these projects to anyone that wishes to follow my journey.
       I hope this portfolio provides people with the new ideas and serves as inspiration anyone trying to excell in the world IT and software development-->
-    <!-- In terms of goals Im still unaware on what I want to directly achieve on this journey. I want to be able learn everything anything the world IT, this could vary from learning about the fundamentals of 
+<!-- In terms of goals Im still unaware on what I want to directly achieve on this journey. I want to be able learn everything anything the world IT, this could vary from learning about the fundamentals of 
      AI and machine learning to creating my OS to learning about the priniciples of rfid and creating my own personal system. I realise this goal similar to trying 
      to capture lightning in a bottle, as the thought of learning everything in a field that is exponentially growing by the minute is a difficult task in itself. -->
-     
+
 <!-- https://dribbble.com/shots/22668977-Simple-Portfolio -->
 <!-- website portfolio basic designs ^^ -->
 
 <!-- The design of the web portfolio?-->
- <!-- I wish for the portfolio to be on 1 page as I do not have enough content about myself or work to be able to have multiple webpages 
+<!-- I wish for the portfolio to be on 1 page as I do not have enough content about myself or work to be able to have multiple webpages 
   I think I will need to learn the grid system as it will be very help in the final look of the page-->
