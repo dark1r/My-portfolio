@@ -1,289 +1,42 @@
+:root {
+    --very-dark-blue: #1B2631;
+    --grayish-cyan: #3F4E4F;
+    --Grayish-blue: #A5C8D6;
+    --white: #F0F4F8;
+    --light-grayish-cyan: #D9E4E0;
+}
 
+body{
+   background-color: var(--very-dark-blue);
+   color: var(--Grayish-blue);
+}
 
-    <style>
-        .card {
-            display: inline-flex;
-        }
+.container {
+    width: 720px;
+    margin: auto;
+}
 
-        @media (max-width:810px) {
-            h1 {
-                color: red;
-            }
+.Navbar {
+    display: flex;
+    gap: 33%;
+    list-style: none;
+}
 
-            h3 {
-                color: aqua;
-            }
+.Navbaritem{
+ 
+}
 
-            #Intro {
-                margin: 0 20px 5px 20px;
-                padding: 100px 10px;
-                background-color: wheat;
-                opacity: 50%;
-            }
+#Navbar {
+    margin-bottom: 200px;
+    margin-top: 100px;
+    font-size: x-large;
+}
 
-            .Textbox {
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 10px;
-                margin: 10px;
-                border-radius: 40px;
-                border: solid wheat;
-            }
-
-            #text_centre {
-                padding: 0px;
-            }
-
-            .headers {
-                padding-left: px;
-            }
-
-            .Page-structure {
-                padding-left: 0px;
-                padding-right: 0px;
-            }
-
-        }
-
-        /*This is the main page view responsiveness so on non mobile devices it will look like the normal webpage*/
-        @media (min-width:811px) {
-            h1 {
-                color: yellowgreen;
-            }
-
-            h3 {
-                color: goldenrod;
-            }
-
-            #Intro {
-                margin: 0 50px 5px 50px;
-                padding: 325px 250px 325px 250px;
-                background-color: wheat;
-                /* opacity: 50%; */
-            }
-
-            .Textbox {
-                padding-left: 100px;
-                padding-right: 100px;
-                margin: 10px 100px;
-                border-radius: 40px;
-                border: solid wheat;
-            }
-
-            #text_centre {
-                padding: 0px 100px;
-            }
-
-            .first_box {
-                /* margin: 0% 50% 0% 2%; */
-                width: 50%;
-                padding: 0px 50px;
-            }
-
-            .headers {
-                padding-left: 50px;
-            }
-
-            .Page-structure {
-                padding-left: 100px;
-                padding-right: 100px;
-            }
-        }
-
-        .section_spc {
-            margin-top: 20px;
-        }
-
-        /* #news {
-            margin-top: 20px;
-            margin-bottom: 5px;
-            padding: 250px;
-            padding-left: 0px;
-            padding-top: 0px;
-            background-color: wheat;
-            opacity: 50%;
-        } */
-
-        .Footer {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-        }
-
-
-
-        .Navbar {
-            display: flex;
-            justify-content: right;
-            list-style-type: none;
-            /* top: 0;
-            position: fixed; */
-        }
-
-        .Navbaritem {
-            padding: 30px;
-            color: antiquewhite;
-        }
-
-        :hover.Navbaritem {
-            background-color: wheat;
-            /* opacity: 50%; */
-        }
-
-
-        #Navbar2 {
-            position: static;
-            top: 0;
-            right: 0;
-        }
-
-        .Snd_box {
-            margin: 0% 10% 0% 0%;
-            /* padding: 0px 50px; */
-        }
-
-        .section_border {
-            margin: 0 50px 5px 50px;
-        }
-
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        body {
-            background-color: black;
-        }
-
-        .grid-container {
-            width: 100%;
-            display: grid;
-            gap: 5px 20px;
-            grid-template-columns: auto;
-            grid-template-rows: 300px 300px 300px;
-        }
-
-        .item1 {
-            background-color: aliceblue;
-            grid-row: span 3;
-            border-radius: 50px;
-        }
-
-        .item2 {
-            background-color: goldenrod;
-            grid-column: 2 / span 2;
-            grid-row: 1;
-            border-radius: 50px
-        }
-
-        .item3 {
-            background-color: goldenrod;
-            grid-column: 2 / span 2;
-            grid-row: 2;
-            border-radius: 50px
-        }
-
-        .item4 {
-            background-color: goldenrod;
-            grid-column: 2 / span 2;
-            grid-row: 3;
-            border-radius: 50px
-        }
-
-        .item5 {
-            background-color: aliceblue;
-            grid-row: 1 /span 3;
-            grid-column: 4;
-            border-radius: 50px;
-        }
-    </style>
-
-
-
-
-
-
-
-/* .projectBox_top{
-            background-color: orangered; 
-            width: 300px; 
-            height: 200px;
-            border-radius: 50px; 
-        }
-        ul {
-            list-style-type: none;
-            float: right;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            background-color: navy;
-        }
-
-        nav {
-            display: flex;
-            justify-content: right;
-            background-color: navy;
-        }
-
-        .navbar1 {
-            display: inline-block;
-        }
-
-        .navbar1>a {
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 36px;
-            text-decoration: none;
-            font-size: large;
-        }
-
-        .navbar1>a:hover {
-            background-color: goldenrod;
-        }
-
-        #Myname {
-            text-align: center;
-            margin-top: 100px;
-            margin-left: 100px;
-            font-size: x-large;
-            float: left;
-            width: 250px;
-            border: black solid;
-
-        }
-
-        .grid-container {
-            display: grid;
-        }
-
-        #colmn1 {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            gap: 50px;
-            background-color: yellow;
-        }
-
-        #colmn2 {
-            grid-column-start: 3;
-            grid-column-end: 7;
-            gap: 50px;
-            background-color: rgb(0, 26, 255);
-        }
-
-        #colmn3 {
-            grid-column-start: 7;
-            grid-column-end: 8;
-            gap: 50px;
-            background-color: rgb(0, 255, 42);
-        }
-        .flex-container{
-            display: flex;
-            gap:10px
-        }
-        .Footer{
-
-        }
-        .background{
-        } */
+.section1{
+    /* border:solid; */
+    border-radius:5px;
+    padding: 10%;
+}
+.section1 p{
+    font-size: large;
+}
