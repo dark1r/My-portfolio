@@ -33,10 +33,17 @@ body{
 }
 
 .section1{
-    /* border:solid; */
+    border:outset;
     border-radius:5px;
     padding: 10%;
 }
+
+.section1 h3{
+ text-align: center;
+ padding-bottom: 30px;
+ font-size: xx-large;
+}
+
 .section1 p{
     font-size: large;
 }
