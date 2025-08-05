@@ -7,8 +7,10 @@
 }
 
 body{
-   background-color: var(--very-dark-blue);
+   /* background-color: var(--very-dark-blue); */
    color: var(--Grayish-blue);
+   /* background-color: color-mix(in srgb, --very-dark-blue 50%, --Grayish-blue 50%); */
+   background-image:-webkit-linear-gradient(bottom left,var(--very-dark-blue),var(--Grayish-blue))
 }
 
 .container {
